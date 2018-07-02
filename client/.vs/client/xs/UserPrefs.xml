@@ -1,0 +1,53 @@
+﻿<Properties StartupConfiguration="{2087961D-D5C2-4413-801D-87994B9E5923}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/AboutPage.xaml.cs">
+    <Files>
+      <File FileName="Models/Item.cs" Line="1" Column="1" />
+      <File FileName="Services/CloudDataStore.cs" Line="1" Column="1" />
+      <File FileName="Services/IDataStore.cs" Line="1" Column="1" />
+      <File FileName="Services/MockDataStore.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/AboutViewModel.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/ItemDetailViewModel.cs" Line="1" Column="1" />
+      <File FileName="ViewModels/ItemsViewModel.cs" Line="1" Column="1" />
+      <File FileName="Views/AboutPage.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="client" expanded="True">
+            <Node name="client" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" expanded="True" />
+                <Node name="ItemDetailPage.xaml" expanded="True">
+                  <Node name="ItemDetailPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="client" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.client FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.client.Droid FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.client.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EF2E70FF-FF5D-43C0-AE61-AF5BE6441586" FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.client.iOS>
+</Properties>
