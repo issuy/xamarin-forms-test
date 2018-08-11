@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace client
+﻿namespace client.Models
 {
     public class Item
     {
