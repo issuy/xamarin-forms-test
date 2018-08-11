@@ -43,3 +43,6 @@ Thumbs.db
 
 # Visual Studio 2015 cache/options directory
 .vs/
+
+# products
+client/Configs/Local/

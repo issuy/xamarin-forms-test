@@ -1,0 +1,41 @@
+﻿using System;
+namespace client.Configs.Local
+{
+    public class Api
+    {
+        enum Endpoint
+        {
+            Local = 1,
+            Dev,
+            Prod
+        }
+
+        static Endpoint endPoint = Endpoint.Local;
+
+        public static string BaseAddress
+        {
+            get
+            {
+                switch (endPoint)
+                {
+                    case Endpoint.Local:
+                        {
+                            return "";
+                        }
+                    case Endpoint.Dev:
+                        {
+                            return "";
+                        }
+                    case Endpoint.Prod:
+                        {
+                            return "";
+                        }
+                    default:
+                        {
+                            throw new Exception();
+                        }
+                }
+            }
+        }
+    }
+}
