@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
 
-namespace client
+namespace client.Services
 {
     public class CloudDataStore : IDataStore<Item>
     {

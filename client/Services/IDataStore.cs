@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace client
+namespace client.Services
 {
     public interface IDataStore<T>
     {
