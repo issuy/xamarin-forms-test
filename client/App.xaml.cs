@@ -1,6 +1,8 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using client.Views;
+using client.Services;
 
 namespace client
 {
