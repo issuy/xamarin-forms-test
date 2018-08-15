@@ -33,6 +33,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sample.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\ApiClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\BaseRequester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DataConstructs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Api\Requester.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Configs\Local\Api.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -40,5 +47,13 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemsPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewItemPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Configs\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Configs\Local\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Configs\Local\README.md" />
+    <None Include="$(MSBuildThisFileDirectory)Configs\Local\Api.cs.tmp" />
   </ItemGroup>
 </Project>
