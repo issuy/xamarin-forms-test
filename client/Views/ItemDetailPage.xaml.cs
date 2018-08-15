@@ -1,8 +1,9 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using client.ViewModels;
 
-namespace client
+namespace client.Views
 {
     public partial class ItemDetailPage : ContentPage
     {
@@ -13,7 +14,7 @@ namespace client
         {
             InitializeComponent();
 
-            var item = new Item
+            var item = new Models.Item
             {
                 Text = "Item 1",
                 Description = "This is an item description."

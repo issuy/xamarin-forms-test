@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-namespace client
+namespace client.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public Services.IDataStore<Models.Item> DataStore => DependencyService.Get<Services.IDataStore<Models.Item>>() ?? new Services.MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy

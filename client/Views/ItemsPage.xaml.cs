@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using client.ViewModels;
 
-namespace client
+namespace client.Views
 {
     public partial class ItemsPage : ContentPage
     {
@@ -19,7 +20,7 @@ namespace client
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Models.Item;
             if (item == null)
                 return;
 

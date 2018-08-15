@@ -5,22 +5,22 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace client
+namespace client.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
+        public ObservableCollection<Models.Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
         {
             Title = "Browse";
-            Items = new ObservableCollection<Item>();
+            Items = new ObservableCollection<Models.Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
+            MessagingCenter.Subscribe<Views.NewItemPage, Models.Item>(this, "AddItem", async (obj, item) =>
             {
-                var _item = item as Item;
+                var _item = item as Models.Item;
                 Items.Add(_item);
                 await DataStore.AddItemAsync(_item);
             });

@@ -2,7 +2,7 @@
 
 using Xamarin.Forms;
 
-namespace client
+namespace client.Views
 {
     public class MainPage : TabbedPage
     {

@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace client
+namespace client.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
-        public ItemDetailViewModel(Item item = null)
+        public Models.Item Item { get; set; }
+        public ItemDetailViewModel(Models.Item item = null)
         {
             Title = item?.Text;
             Item = item;
