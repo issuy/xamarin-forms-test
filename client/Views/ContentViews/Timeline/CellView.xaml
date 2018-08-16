@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="client.Views.ContentViews.Timeline.CellView">
+    <Grid Padding="10" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Gray"/>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="太郎"
+                   FontSize="14" TextColor="Gray"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="属性"
+                   FontSize="14" TextColor="Gray"/>
+            <Label Grid.Row="1" Grid.Column="0"
+                   HorizontalOptions="Start" Text="評価 ★★★☆☆(20)"
+                   FontSize="14" TextColor="Gray"/>
+        </Grid>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+               Text="コメント" FontSize="14" TextColor="Gray"/>
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Label Text="テキスト" FontSize="14" TextColor="Gray"/>
+            <Label HorizontalOptions="EndAndExpand" Text="地域：東京23区"
+                   FontSize="14" TextColor="Gray"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                     Orientation="Horizontal" HorizontalOptions="End">
+            <Button Text="トーク"/>
+            <Button Text="フォロー"/>
+        </StackLayout>
+    </Grid>
+</ContentView>

@@ -9,6 +9,7 @@ namespace client.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        public Helpers.IDialogs dialogs;
         public Services.IDataStore<Models.Item> DataStore => DependencyService.Get<Services.IDataStore<Models.Item>>() ?? new Services.MockDataStore();
 
         bool isBusy = false;

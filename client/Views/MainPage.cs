@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace client.Views
@@ -8,38 +7,22 @@ namespace client.Views
     {
         public MainPage()
         {
-            Page itemsPage, aboutPage = null;
+            var children = new List<ContentPage>{
+                new TimelinePage()
+                {
+                    Title = "timeline"
+                },
+                new ItemsPage(){
+                    Title = "items"
+                },
+                new TodoPage(){
+                    Title = "todo"
+                },
+            };
 
-            switch (Device.RuntimePlatform)
-            {
-                case Device.iOS:
-                    itemsPage = new NavigationPage(new ItemsPage())
-                    {
-                        Title = "Browse"
-                    };
-
-                    aboutPage = new NavigationPage(new AboutPage())
-                    {
-                        Title = "About"
-                    };
-                    itemsPage.Icon = "tab_feed.png";
-                    aboutPage.Icon = "tab_about.png";
-                    break;
-                default:
-                    itemsPage = new ItemsPage()
-                    {
-                        Title = "Browse"
-                    };
-
-                    aboutPage = new AboutPage()
-                    {
-                        Title = "About"
-                    };
-                    break;
+            foreach (var child in children){
+                Children.Add(child);
             }
-
-            Children.Add(itemsPage);
-            Children.Add(aboutPage);
 
             Title = Children[0].Title;
         }

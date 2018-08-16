@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:user="clr-namespace:client.Views.ContentViews.Timeline"
+    BackgroundColor="PeachPuff"
+    x:Class="client.Views.TimelinePage">
+    <StackLayout>
+
+        <SearchBar x:Name="searchBar1a" Placeholder="検索" FontSize="14"
+                   CancelButtonColor="Red" TextColor="Gray" BackgroundColor="Transparent"/>
+
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HeightRequest="25">
+                <!--ユーザー登録タグを表示-->
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+                <Button Text="タグ" BackgroundColor="White" TextColor="Gray" FontSize="12"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Grid>
+            <Button Text="タイムライン" BackgroundColor="White" TextColor="Black" FontSize="12"
+                    Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+            <!--サプライヤーページに移動-->
+            <Button Text="サプライヤー" BackgroundColor="White" TextColor="DarkGray"
+                    FontSize="12" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+
+        <ScrollView>
+            <StackLayout>
+                <ActivityIndicator IsRunning="true"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <user:CellView Grid.Row="0" Grid.ColumnSpan="1"/>
+                    <user:CellView Grid.Row="1" Grid.ColumnSpan="1"/>
+                    <user:CellView Grid.Row="2" Grid.ColumnSpan="1"/>
+                    <user:CellView Grid.Row="3" Grid.ColumnSpan="1"/>
+                    <user:CellView Grid.Row="4" Grid.ColumnSpan="1"/>
+                </Grid>
+                <ActivityIndicator IsVisible="false" IsRunning="true"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
