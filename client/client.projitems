@@ -40,6 +40,22 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\Api\DataConstructs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\Api\Requester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Configs\Local\Api.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Helpers\Dialogs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Helpers\IDialogs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ContentViews\Timeline\CellView.xaml.cs">
+      <DependentUpon>CellView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TimelinePage.xaml.cs">
+      <DependentUpon>TimelinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TodoPage.xaml.cs">
+      <DependentUpon>TodoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TimelineViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TodoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
@@ -47,6 +63,10 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ItemsPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NewItemPage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ContentViews\Timeline\CellView.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TimelinePage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TodoPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Configs\" />
